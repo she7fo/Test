@@ -1,79 +1,75 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>FITS | الدوري المدرسي</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FITS WEBSITE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet"/>
   <style>
     body {
       margin: 0;
-      font-family: 'Arial', sans-serif;
-      background: #fff8e1;
-      color: #333;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f9d949; /* أصفر */
+      color: #222;
     }
+
     header {
-      background-color: #ffd700;
-      padding: 15px;
-      text-align: center;
-      font-size: 24px;
+      background-color: #000;
+      color: white;
+      padding: 16px;
+      font-size: 22px;
       font-weight: bold;
-      color: #000;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
-    main {
-      padding: 20px;
-    }
-    .section {
-      background: white;
-      margin-bottom: 15px;
-      padding: 15px;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    .section h2 {
-      margin-top: 0;
-      color: #d4af37;
-    }
-    a {
-      text-decoration: none;
-      color: #007bff;
-    }
-    .footer {
       text-align: center;
-      padding: 10px;
-      font-size: 12px;
-      color: #999;
     }
+
+    .card {
+      background-color: white;
+      border-radius: 12px;
+      margin: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .card-content {
+      padding: 16px;
+    }
+
+    .card-title {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .card-description {
+      font-size: 14px;
+      color: #444;
+    }
+
   </style>
 </head>
 <body>
-  <header>FITS | بطولات الاتحاد المدرسي</header>
-  <main>
-    <div class="section">
-      <h2><a href="liga1.html">FITS LIGA1 27 (الدوري)</a></h2>
+
+  <header>FITS WEBSITE</header>
+  <div class="card">
+    <img src="liga1.jpg" alt="FITS LIGA1 27">
+    <div class="card-content">
+      <div class="card-title">FITS LIGA1 27</div>
+      <div class="card-description">بطولة الدوري المدرسي بمشاركة أفضل الفرق.</div>
     </div>
-    <div class="section">
-      <h2><a href="vianta.html">FITS VIANTA CUP (الكأس)</a></h2>
+  </div>
+  <div class="card">
+    <img src="vianta.jpg" alt="FITS VIANTA CUP">
+    <div class="card-content">
+      <div class="card-title">FITS VIANTA CUP</div>
+      <div class="card-description">بطولة الكأس المثيرة للمواهب الشابة.</div>
     </div>
-    <div class="section">
-      <h2><a href="cupofcups.html">FITS CUP OF CUPS (كأس الكؤوس)</a></h2>
-    </div>
-    <div class="section">
-      <h2><a href="worldcup.html">FITS WORLD CUP</a></h2>
-    </div>
-    <div class="section">
-      <h2><a href="sansiro.html">FITS SANSIRO (السوبر)</a></h2>
-    </div>
-    <div class="section">
-      <h2><a href="copa.html">FITS COPA DEL MUNDO</a></h2>
-    </div>
-    <div class="section">
-      <h2><a href="elite.html">🏆 FITS ELITE AWARD</a></h2>
-    </div>
-    <div class="section">
-      <h2><a href="media.html">📸 صفحة الميديا</a></h2>
-    </div>
-  </main>
-  <div class="footer">© 2025 FITS School League</div>
+  </div>
+
 </body>
 </html>
