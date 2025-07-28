@@ -1,74 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>FITS WEBSITE</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet"/>
   <style>
     body {
+      font-family: Arial, sans-serif;
       margin: 0;
-      font-family: 'Roboto', sans-serif;
-      background-color: #f9d949; /* أصفر */
-      color: #222;
+      background-color: #fff8dc;
     }
 
     header {
-      background-color: #000;
-      color: white;
-      padding: 16px;
-      font-size: 22px;
-      font-weight: bold;
+      background-color: #ffd700;
+      color: #000;
       text-align: center;
+      padding: 1rem;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .cards-container {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      padding: 16px;
     }
 
     .card {
       background-color: white;
       border-radius: 12px;
-      margin: 16px;
       overflow: hidden;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
 
     .card img {
       width: 100%;
-      height: auto;
-      display: block;
+      height: 200px;
+      object-fit: cover;
     }
 
     .card-content {
-      padding: 16px;
+      padding: 12px;
     }
 
-    .card-title {
-      font-size: 18px;
-      font-weight: 700;
-      margin-bottom: 8px;
+    .card-content h2 {
+      margin: 0 0 8px;
+      font-size: 1.2rem;
+      color: #333;
     }
 
-    .card-description {
-      font-size: 14px;
-      color: #444;
+    .card-content p {
+      margin: 0;
+      color: #555;
+      font-size: 0.95rem;
     }
 
+    @media(min-width: 600px) {
+      .cards-container {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+    }
   </style>
 </head>
 <body>
 
   <header>FITS WEBSITE</header>
-  <div class="card">
-    <img src="liga1.jpg" alt="FITS LIGA1 27">
-    <div class="card-content">
-      <div class="card-title">FITS LIGA1 27</div>
-      <div class="card-description">بطولة الدوري المدرسي بمشاركة أفضل الفرق.</div>
+
+  <div class="cards-container">
+
+    <div class="card">
+      <img src="images/liga1.jpg" alt="FITS LIGA1 27">
+      <div class="card-content">
+        <h2>FITS LIGA1 27</h2>
+        <p>بطولة الدوري المدرسي الرسمي.</p>
+      </div>
     </div>
-  </div>
-  <div class="card">
-    <img src="vianta.jpg" alt="FITS VIANTA CUP">
-    <div class="card-content">
-      <div class="card-title">FITS VIANTA CUP</div>
-      <div class="card-description">بطولة الكأس المثيرة للمواهب الشابة.</div>
+
+    <div class="card">
+      <img src="images/vianta.jpg" alt="FITS VIANTA CUP">
+      <div class="card-content">
+        <h2>FITS VIANTA CUP</h2>
+        <p>بطولة الكأس المليئة بالمفاجآت.</p>
+      </div>
     </div>
+
+    <div class="card">
+      <img src="images/cupofcups.jpg" alt="FITS CUP OF CUPS">
+      <div class="card-content">
+        <h2>FITS CUP OF CUPS</h2>
+        <p>بطولة تجمع بين أبطال البطولات.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/world-cup.jpg" alt="FITS WORLD CUP">
+      <div class="card-content">
+        <h2>FITS WORLD CUP</h2>
+        <p>كأس العالم المدرسي.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/sansiro.jpg" alt="FITS SANSIRO">
+      <div class="card-content">
+        <h2>FITS SANSIRO</h2>
+        <p>السوبر بين بطل الدوري والكأس.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/copa.jpg" alt="FITS COPA DEL MUNDO">
+      <div class="card-content">
+        <h2>FITS COPA DEL MUNDO</h2>
+        <p>بطولة رمضانية مصغرة.</p>
+      </div>
+    </div>
+
   </div>
 
 </body>
